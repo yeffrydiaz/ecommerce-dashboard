@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Header from '../components/layout/Header';
 import { recentOrders } from '../data/mockData';
-import { Search, Filter, Download } from 'lucide-react';
+import { Search } from 'lucide-react';
 
 const statusColors = {
   Delivered: 'bg-emerald-100 text-emerald-700',
