@@ -1,3 +1,266 @@
+export const revenueData = [
+  { month: 'Jan', revenue: 42000, orders: 320 },
+  { month: 'Feb', revenue: 38000, orders: 290 },
+  { month: 'Mar', revenue: 51000, orders: 410 },
+  { month: 'Apr', revenue: 47000, orders: 380 },
+  { month: 'May', revenue: 63000, orders: 520 },
+  { month: 'Jun', revenue: 58000, orders: 470 },
+  { month: 'Jul', revenue: 72000, orders: 590 },
+  { month: 'Aug', revenue: 68000, orders: 560 },
+  { month: 'Sep', revenue: 75000, orders: 610 },
+  { month: 'Oct', revenue: 82000, orders: 670 },
+  { month: 'Nov', revenue: 95000, orders: 780 },
+  { month: 'Dec', revenue: 110000, orders: 890 },
+];
+
+export const categoryData = [
+  { name: 'Electronics', value: 35 },
+  { name: 'Clothing', value: 25 },
+  { name: 'Home & Garden', value: 20 },
+  { name: 'Sports', value: 12 },
+  { name: 'Books', value: 8 },
+];
+
+export const recentOrders = [
+  {
+    id: '#ORD-001',
+    customer: 'Alice Johnson',
+    email: 'alice@example.com',
+    product: 'MacBook Pro 16"',
+    amount: 2499.99,
+    status: 'Delivered',
+    date: '2024-12-15',
+  },
+  {
+    id: '#ORD-002',
+    customer: 'Bob Smith',
+    email: 'bob@example.com',
+    product: 'Nike Air Max 270',
+    amount: 129.99,
+    status: 'Processing',
+    date: '2024-12-14',
+  },
+  {
+    id: '#ORD-003',
+    customer: 'Carol White',
+    email: 'carol@example.com',
+    product: 'Samsung 65" QLED TV',
+    amount: 1299.99,
+    status: 'Shipped',
+    date: '2024-12-13',
+  },
+  {
+    id: '#ORD-004',
+    customer: 'David Brown',
+    email: 'david@example.com',
+    product: 'Levi\'s Slim Jeans',
+    amount: 59.99,
+    status: 'Pending',
+    date: '2024-12-12',
+  },
+  {
+    id: '#ORD-005',
+    customer: 'Eva Martinez',
+    email: 'eva@example.com',
+    product: 'Sony WH-1000XM5',
+    amount: 349.99,
+    status: 'Delivered',
+    date: '2024-12-11',
+  },
+  {
+    id: '#ORD-006',
+    customer: 'Frank Lee',
+    email: 'frank@example.com',
+    product: 'iPad Air 5th Gen',
+    amount: 749.99,
+    status: 'Cancelled',
+    date: '2024-12-10',
+  },
+];
+
+export const products = [
+  {
+    id: 1,
+    name: 'MacBook Pro 16"',
+    category: 'Electronics',
+    price: 2499.99,
+    stock: 45,
+    sold: 234,
+    rating: 4.8,
+    image: 'https://placehold.co/60x60/6366f1/white?text=💻',
+  },
+  {
+    id: 2,
+    name: 'Samsung 65" QLED TV',
+    category: 'Electronics',
+    price: 1299.99,
+    stock: 23,
+    sold: 189,
+    rating: 4.6,
+    image: 'https://placehold.co/60x60/8b5cf6/white?text=📺',
+  },
+  {
+    id: 3,
+    name: 'Nike Air Max 270',
+    category: 'Clothing',
+    price: 129.99,
+    stock: 156,
+    sold: 567,
+    rating: 4.5,
+    image: 'https://placehold.co/60x60/ec4899/white?text=👟',
+  },
+  {
+    id: 4,
+    name: 'Sony WH-1000XM5',
+    category: 'Electronics',
+    price: 349.99,
+    stock: 67,
+    sold: 312,
+    rating: 4.9,
+    image: 'https://placehold.co/60x60/14b8a6/white?text=🎧',
+  },
+  {
+    id: 5,
+    name: 'Yoga Mat Premium',
+    category: 'Sports',
+    price: 49.99,
+    stock: 234,
+    sold: 891,
+    rating: 4.4,
+    image: 'https://placehold.co/60x60/f59e0b/white?text=🧘',
+  },
+  {
+    id: 6,
+    name: 'Coffee Table Oak',
+    category: 'Home & Garden',
+    price: 299.99,
+    stock: 12,
+    sold: 78,
+    rating: 4.7,
+    image: 'https://placehold.co/60x60/84cc16/white?text=🪑',
+  },
+  {
+    id: 7,
+    name: 'Levi\'s Slim Jeans',
+    category: 'Clothing',
+    price: 59.99,
+    stock: 342,
+    sold: 1234,
+    rating: 4.3,
+    image: 'https://placehold.co/60x60/3b82f6/white?text=👖',
+  },
+  {
+    id: 8,
+    name: 'iPad Air 5th Gen',
+    category: 'Electronics',
+    price: 749.99,
+    stock: 89,
+    sold: 456,
+    rating: 4.7,
+    image: 'https://placehold.co/60x60/ef4444/white?text=📱',
+  },
+];
+
+export const customers = [
+  {
+    id: 1,
+    name: 'Alice Johnson',
+    email: 'alice@example.com',
+    phone: '+1 (555) 123-4567',
+    location: 'New York, USA',
+    orders: 12,
+    spent: 4289.99,
+    joined: '2023-01-15',
+    status: 'Active',
+  },
+  {
+    id: 2,
+    name: 'Bob Smith',
+    email: 'bob@example.com',
+    phone: '+1 (555) 234-5678',
+    location: 'Los Angeles, USA',
+    orders: 8,
+    spent: 1890.50,
+    joined: '2023-03-22',
+    status: 'Active',
+  },
+  {
+    id: 3,
+    name: 'Carol White',
+    email: 'carol@example.com',
+    phone: '+1 (555) 345-6789',
+    location: 'Chicago, USA',
+    orders: 15,
+    spent: 6750.00,
+    joined: '2022-11-08',
+    status: 'Active',
+  },
+  {
+    id: 4,
+    name: 'David Brown',
+    email: 'david@example.com',
+    phone: '+1 (555) 456-7890',
+    location: 'Houston, USA',
+    orders: 3,
+    spent: 289.97,
+    joined: '2024-02-14',
+    status: 'Inactive',
+  },
+  {
+    id: 5,
+    name: 'Eva Martinez',
+    email: 'eva@example.com',
+    phone: '+1 (555) 567-8901',
+    location: 'Miami, USA',
+    orders: 21,
+    spent: 8920.45,
+    joined: '2022-07-30',
+    status: 'Active',
+  },
+  {
+    id: 6,
+    name: 'Frank Lee',
+    email: 'frank@example.com',
+    phone: '+1 (555) 678-9012',
+    location: 'Seattle, USA',
+    orders: 6,
+    spent: 1450.00,
+    joined: '2023-09-05',
+    status: 'Active',
+  },
+  {
+    id: 7,
+    name: 'Grace Kim',
+    email: 'grace@example.com',
+    phone: '+1 (555) 789-0123',
+    location: 'Boston, USA',
+    orders: 18,
+    spent: 5670.30,
+    joined: '2022-12-01',
+    status: 'Active',
+  },
+  {
+    id: 8,
+    name: 'Henry Wilson',
+    email: 'henry@example.com',
+    phone: '+1 (555) 890-1234',
+    location: 'Denver, USA',
+    orders: 2,
+    spent: 159.98,
+    joined: '2024-05-20',
+    status: 'Inactive',
+  },
+];
+
+export const statsData = {
+  totalRevenue: { value: 801000, change: 12.5, label: 'Total Revenue' },
+  totalOrders: { value: 5890, change: 8.2, label: 'Total Orders' },
+  totalCustomers: { value: 1247, change: 5.7, label: 'Total Customers' },
+  avgOrderValue: { value: 136.0, change: -2.1, label: 'Avg. Order Value' },
+};
+
+// Additional data used by Sales and Inventory pages
+
 export const monthlyRevenue = [
   { month: 'Jan', revenue: 42000 },
   { month: 'Feb', revenue: 38000 },
@@ -11,25 +274,6 @@ export const monthlyRevenue = [
   { month: 'Oct', revenue: 78000 },
   { month: 'Nov', revenue: 85000 },
   { month: 'Dec', revenue: 92000 },
-];
-
-export const weeklyOrders = [
-  { week: 'W1', orders: 145 },
-  { week: 'W2', orders: 162 },
-  { week: 'W3', orders: 138 },
-  { week: 'W4', orders: 179 },
-  { week: 'W5', orders: 195 },
-  { week: 'W6', orders: 167 },
-  { week: 'W7', orders: 210 },
-  { week: 'W8', orders: 223 },
-];
-
-export const revenueByCategory = [
-  { name: 'Electronics', value: 35 },
-  { name: 'Clothing', value: 25 },
-  { name: 'Food', value: 15 },
-  { name: 'Sports', value: 12 },
-  { name: 'Home & Garden', value: 13 },
 ];
 
 export const salesByRegion = [
@@ -48,7 +292,7 @@ export const topProducts = [
   { id: 5, name: 'Yoga Mat Premium', category: 'Sports', sales: 654, revenue: 32700 },
 ];
 
-export const products = [
+export const inventoryProducts = [
   { id: 'P001', name: 'Wireless Headphones Pro', category: 'Electronics', stock: 145, price: 149.99, status: 'In Stock' },
   { id: 'P002', name: 'Smart Watch Series 4', category: 'Electronics', stock: 23, price: 249.99, status: 'Low Stock' },
   { id: 'P003', name: 'Running Shoes X500', category: 'Sports', stock: 0, price: 99.99, status: 'Out of Stock' },
@@ -64,34 +308,4 @@ export const products = [
   { id: 'P013', name: 'USB-C Hub 7-in-1', category: 'Electronics', stock: 94, price: 44.99, status: 'In Stock' },
   { id: 'P014', name: 'Linen Shirt', category: 'Clothing', stock: 0, price: 44.99, status: 'Out of Stock' },
   { id: 'P015', name: 'Indoor Plant Pot Set', category: 'Home & Garden', stock: 43, price: 29.99, status: 'In Stock' },
-];
-
-export const orders = [
-  { id: 'ORD-001', customer: 'Alice Johnson', date: '2024-01-15', items: 3, total: 329.97, status: 'Delivered' },
-  { id: 'ORD-002', customer: 'Bob Smith', date: '2024-01-16', items: 1, total: 249.99, status: 'Shipped' },
-  { id: 'ORD-003', customer: 'Carol White', date: '2024-01-17', items: 5, total: 189.95, status: 'Processing' },
-  { id: 'ORD-004', customer: 'David Brown', date: '2024-01-18', items: 2, total: 94.98, status: 'Pending' },
-  { id: 'ORD-005', customer: 'Eva Martinez', date: '2024-01-19', items: 1, total: 149.99, status: 'Delivered' },
-  { id: 'ORD-006', customer: 'Frank Lee', date: '2024-01-20', items: 4, total: 219.96, status: 'Cancelled' },
-  { id: 'ORD-007', customer: 'Grace Kim', date: '2024-01-21', items: 2, total: 179.98, status: 'Shipped' },
-  { id: 'ORD-008', customer: 'Henry Wilson', date: '2024-01-22', items: 3, total: 134.97, status: 'Delivered' },
-  { id: 'ORD-009', customer: 'Iris Chen', date: '2024-01-23', items: 1, total: 64.99, status: 'Processing' },
-  { id: 'ORD-010', customer: 'Jack Davis', date: '2024-01-24', items: 6, total: 449.94, status: 'Pending' },
-  { id: 'ORD-011', customer: 'Karen Taylor', date: '2024-01-25', items: 2, total: 89.98, status: 'Delivered' },
-  { id: 'ORD-012', customer: 'Leo Anderson', date: '2024-01-26', items: 1, total: 39.99, status: 'Shipped' },
-  { id: 'ORD-013', customer: 'Mia Thompson', date: '2024-01-27', items: 3, total: 269.97, status: 'Delivered' },
-  { id: 'ORD-014', customer: 'Noah Garcia', date: '2024-01-28', items: 2, total: 114.98, status: 'Processing' },
-  { id: 'ORD-015', customer: 'Olivia Harris', date: '2024-01-29', items: 1, total: 129.99, status: 'Cancelled' },
-  { id: 'ORD-016', customer: 'Paul Clark', date: '2024-01-30', items: 4, total: 199.96, status: 'Pending' },
-  { id: 'ORD-017', customer: 'Quinn Lewis', date: '2024-01-31', items: 2, total: 84.98, status: 'Shipped' },
-  { id: 'ORD-018', customer: 'Rachel Walker', date: '2024-02-01', items: 5, total: 374.95, status: 'Delivered' },
-  { id: 'ORD-019', customer: 'Sam Hall', date: '2024-02-02', items: 1, total: 44.99, status: 'Processing' },
-  { id: 'ORD-020', customer: 'Tara Young', date: '2024-02-03', items: 3, total: 159.97, status: 'Delivered' },
-];
-
-export const statsCards = [
-  { title: 'Total Revenue', value: '$756,000', change: '+12.5%', positive: true },
-  { title: 'Total Orders', value: '1,419', change: '+8.2%', positive: true },
-  { title: 'Total Products', value: '15', change: '-2.1%', positive: false },
-  { title: 'Total Customers', value: '3,842', change: '+5.7%', positive: true },
 ];

@@ -1,24 +1,29 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Layout from './components/Layout';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/layout/Layout';
 import Dashboard from './pages/Dashboard';
+import Orders from './pages/Orders';
+import Products from './pages/Products';
+import Customers from './pages/Customers';
+import Analytics from './pages/Analytics';
+import Settings from './pages/Settings';
 import Sales from './pages/Sales';
 import Inventory from './pages/Inventory';
-import Orders from './pages/Orders';
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Navigate to="/dashboard" replace />} />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="sales" element={<Sales />} />
-          <Route path="inventory" element={<Inventory />} />
-          <Route path="orders" element={<Orders />} />
-        </Route>
-      </Routes>
-    </Router>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/customers" element={<Customers />} />
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/sales" element={<Sales />} />
+          <Route path="/inventory" element={<Inventory />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
-
-export default App;
